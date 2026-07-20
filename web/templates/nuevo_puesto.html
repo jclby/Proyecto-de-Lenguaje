@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block titulo %}Nuevo puesto - Seleccion de Personal{% endblock %}
+
+{% block contenido %}
+
+<div class="card">
+    <p class="card-titulo">Agregar nuevo puesto</p>
+
+    <form method="post" class="formulario" id="form-nuevo-puesto">
+        <label>Titulo del puesto</label>
+        <input type="text" name="titulo" required placeholder="Ej: Data Scientist">
+
+        <div class="formulario-fila">
+            <div>
+                <label>Mínimo años de experiencia</label>
+                <input type="number" name="minAniosExperiencia" required min="0" max="50" placeholder="3">
+            </div>
+            <div>
+                <label>Nivel educativo requerido</label>
+                <select name="nivelEducacionRequerido" required>
+                    {% for nivel in niveles %}
+                    <option value="{{ nivel }}">{{ nivel.capitalize() }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+
+        <label>Habilidades requeridas</label>
+        <div class="chip-selector" id="chip-habilidades" data-hidden-name="habilidadesRequeridas">
+            <div class="chip-lista"></div>
+            <div class="chip-agregar">
+                <select class="chip-select">
+                    <option value="">-- Seleccionar --</option>
+                    {% for h in catalogo_habilidades %}
+                    <option value="{{ h }}">{{ h }}</option>
+                    {% endfor %}
+                    <option value="__otro__">Otro (escribir)...</option>
+                </select>
+                <input type="text" class="chip-otro" placeholder="Escribe la habilidad" style="display:none">
+                <button type="button" class="boton-secundario chip-add-btn">+ Agregar</button>
+            </div>
+        </div>
+
+        <label>Certificaciones deseadas (opcional)</label>
+        <div class="chip-selector" id="chip-certificaciones" data-hidden-name="certificacionesDeseadas">
+            <div class="chip-lista"></div>
+            <div class="chip-agregar">
+                <select class="chip-select">
+                    <option value="">-- Seleccionar --</option>
+                    {% for c in catalogo_certificaciones %}
+                    <option value="{{ c }}">{{ c }}</option>
+                    {% endfor %}
+                    <option value="__otro__">Otro (escribir)...</option>
+                </select>
+                <input type="text" class="chip-otro" placeholder="Escribe la certificacion" style="display:none">
+                <button type="button" class="boton-secundario chip-add-btn">+ Agregar</button>
+            </div>
+        </div>
+
+        <button type="submit" class="boton-principal">Guardar y recalcular</button>
+    </form>
+</div>
+
+<script src="{{ url_for('static', filename='js/chips.js') }}"></script>
+<script>
+    initChipSelector('chip-habilidades', []);
+    initChipSelector('chip-certificaciones', []);
+</script>
+
+{% endblock %}

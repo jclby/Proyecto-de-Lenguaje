@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block titulo %}Recalculando - Seleccion de Personal{% endblock %}
+
+{% block contenido %}
+
+{% if mensaje_previo %}
+<div class="aviso-exito">{{ mensaje_previo }}</div>
+{% endif %}
+
+<div class="card">
+    {% if exito %}
+        <p class="card-titulo"><span class="badge badge-excelente">Completado</span> Recalculo exitoso</p>
+        <p class="texto-secundario">Scala, Python y Prolog se ejecutaron correctamente. Los resultados ya estan actualizados.</p>
+    {% else %}
+        <p class="card-titulo"><span class="badge badge-bajo">Error</span> El recalculo fallo</p>
+        <p class="texto-secundario">Revisa el detalle abajo. Asegurate de tener Scala (sbt) y SWI-Prolog instalados y en el PATH.</p>
+    {% endif %}
+
+    <details class="detalle-log">
+        <summary>Ver detalle de la ejecucion</summary>
+        <pre class="log">{{ salida }}</pre>
+    </details>
+
+    <div class="formulario-acciones">
+        <a href="/" class="boton-principal">Ver dashboard</a>
+        <a href="/todos" class="nav-link">Ver tabla completa</a>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "titulo": "Data Scientist",
+    "minAniosExperiencia": 3,
+    "nivelEducacionRequerido": "licenciatura",
+    "habilidadesRequeridas": [
+      "Python",
+      "Machine Learning",
+      "SQL"
+    ],
+    "certificacionesDeseadas": [
+      "AWS Certified",
+      "Google Cloud"
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Tech Lead",
+    "minAniosExperiencia": 6,
+    "nivelEducacionRequerido": "licenciatura",
+    "habilidadesRequeridas": [
+      "Liderazgo",
+      "Comunicacion",
+      "SQL"
+    ],
+    "certificacionesDeseadas": [
+      "PMP",
+      "Scrum Master"
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "Junior Developer",
+    "minAniosExperiencia": 0,
+    "nivelEducacionRequerido": "bachiller",
+    "habilidadesRequeridas": [
+      "Python",
+      "SQL"
+    ],
+    "certificacionesDeseadas": []
+  },
+  {
+    "id": 4,
+    "titulo": "Programador Junior",
+    "minAniosExperiencia": 0,
+    "nivelEducacionRequerido": "bachiller",
+    "habilidadesRequeridas": [
+      "Python",
+      "Java",
+      "SQL"
+    ],
+    "certificacionesDeseadas": [
+      "Cisco"
+    ]
+  }
+]

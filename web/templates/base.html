@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %}Seleccion de Personal{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="header-contenido">
+            <span class="header-titulo">Sistema de Seleccion de Personal</span>
+            <nav class="nav">
+                <a href="/" class="nav-link">Dashboard</a>
+                <a href="/todos" class="nav-link">Tabla completa</a>
+                <a href="/nuevo-candidato" class="nav-link">+ Candidato</a>
+                <a href="/nuevo-puesto" class="nav-link">+ Puesto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor">
+        {% block contenido %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        Scala &middot; Python &middot; Prolog &middot; Flask
+    </footer>
+</body>
+</html>

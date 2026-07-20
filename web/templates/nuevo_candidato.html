@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+{% block titulo %}Nuevo candidato - Seleccion de Personal{% endblock %}
+
+{% block contenido %}
+
+<div class="card">
+    <p class="card-titulo">Subir CV (PDF)</p>
+    <p class="texto-secundario">Sube el CV en PDF del candidato y el formulario se completa automaticamente.</p>
+
+    <label class="cv-dropzone" id="cv-dropzone" for="cv-file">
+        <svg class="cv-icono" width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3v12m0 0-4-4m4 4 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="cv-dropzone-texto" id="cv-nombre-archivo">Haz clic para elegir un PDF, o arrastralo aqui</span>
+        <input type="file" id="cv-file" accept="application/pdf" hidden>
+    </label>
+
+    <button type="button" class="boton-principal cv-boton-extraer" id="btn-extraer-cv">Extraer datos del CV</button>
+
+    <div id="cv-estado"></div>
+</div>
+
+<div class="card">
+    <p class="card-titulo">Datos del candidato</p>
+    <p class="texto-secundario">Revisa y ajusta los datos (extraidos del CV o escritos manualmente) antes de guardar.</p>
+
+    <form method="post" class="formulario">
+        <label>Nombre completo</label>
+        <input type="text" name="nombre" required placeholder="Ej: Ana Gutierrez">
+
+        <div class="formulario-fila">
+            <div>
+                <label>Edad</label>
+                <input type="number" name="edad" required min="18" max="70" placeholder="28">
+            </div>
+            <div>
+                <label>Años de experiencia</label>
+                <input type="number" name="aniosExperiencia" required min="0" max="50" placeholder="4">
+            </div>
+        </div>
+
+        <label>Nivel de educacion</label>
+        <select name="nivelEducacion" required>
+            {% for nivel in niveles %}
+            <option value="{{ nivel }}">{{ nivel.capitalize() }}</option>
+            {% endfor %}
+        </select>
+
+        <label>Habilidades (separadas por coma)</label>
+        <input type="text" name="habilidades" placeholder="Python, SQL, Machine Learning">
+
+        <label>Certificaciones (separadas por coma, opcional)</label>
+        <input type="text" name="certificaciones" placeholder="AWS Certified, Scrum Master">
+
+        <label>Resumen profesional (opcional)</label>
+        <textarea name="resumenProfesional" rows="3" placeholder="Texto libre sobre la experiencia del candidato..."></textarea>
+
+        <button type="submit" class="boton-principal">Guardar y recalcular</button>
+    </form>
+</div>
+
+<script>
+const dropzone = document.getElementById("cv-dropzone");
+const inputArchivoEl = document.getElementById("cv-file");
+const nombreArchivoEl = document.getElementById("cv-nombre-archivo");
+
+function mostrarNombreArchivo() {
+    if (inputArchivoEl.files.length) {
+        nombreArchivoEl.textContent = inputArchivoEl.files[0].name;
+        dropzone.classList.add("cv-dropzone-con-archivo");
+    } else {
+        nombreArchivoEl.textContent = "Haz clic para elegir un PDF, o arrastralo aqui";
+        dropzone.classList.remove("cv-dropzone-con-archivo");
+    }
+}
+
+inputArchivoEl.addEventListener("change", mostrarNombreArchivo);
+
+["dragenter", "dragover"].forEach(evento => {
+    dropzone.addEventListener(evento, (e) => {
+        e.preventDefault();
+        dropzone.classList.add("cv-dropzone-activo");
+    });
+});
+
+["dragleave", "drop"].forEach(evento => {
+    dropzone.addEventListener(evento, (e) => {
+        e.preventDefault();
+        dropzone.classList.remove("cv-dropzone-activo");
+    });
+});
+
+dropzone.addEventListener("drop", (e) => {
+    const archivos = e.dataTransfer.files;
+    if (archivos.length) {
+        inputArchivoEl.files = archivos;
+        mostrarNombreArchivo();
+    }
+});
+
+document.getElementById("btn-extraer-cv").addEventListener("click", async () => {
+    const inputArchivo = document.getElementById("cv-file");
+    const estado = document.getElementById("cv-estado");
+
+    if (!inputArchivo.files.length) {
+        estado.className = "cv-estado error";
+        estado.textContent = "Selecciona un archivo PDF primero.";
+        return;
+    }
+
+    estado.className = "cv-estado";
+    estado.textContent = "Leyendo CV...";
+
+    const formData = new FormData();
+    formData.append("cv", inputArchivo.files[0]);
+
+    try {
+        const respuesta = await fetch("{{ url_for('extraer_cv') }}", {
+            method: "POST",
+            body: formData,
+        });
+        const resultado = await respuesta.json();
+
+        if (!respuesta.ok) {
+            estado.className = "cv-estado error";
+            estado.textContent = resultado.error || "No se pudo procesar el CV.";
+            return;
+        }
+
+        const datos = resultado.datos;
+        const form = document.querySelector("form");
+
+        if (datos.nombre) form.nombre.value = datos.nombre;
+        if (datos.edad !== null && datos.edad !== undefined) form.edad.value = datos.edad;
+        if (datos.aniosExperiencia !== null && datos.aniosExperiencia !== undefined) {
+            form.aniosExperiencia.value = datos.aniosExperiencia;
+        }
+        if (datos.nivelEducacion) form.nivelEducacion.value = datos.nivelEducacion;
+        if (datos.habilidades && datos.habilidades.length) {
+            form.habilidades.value = datos.habilidades.join(", ");
+        }
+        if (datos.certificaciones && datos.certificaciones.length) {
+            form.certificaciones.value = datos.certificaciones.join(", ");
+        }
+        if (datos.resumenProfesional) form.resumenProfesional.value = datos.resumenProfesional;
+
+        if (resultado.advertencias && resultado.advertencias.length) {
+            estado.className = "cv-estado error";
+            estado.innerHTML = "Se completaron los campos, pero revisa esto antes de guardar:<ul>" +
+                resultado.advertencias.map(a => "<li>" + a + "</li>").join("") + "</ul>";
+        } else {
+            estado.className = "cv-estado exito";
+            estado.textContent = "Datos extraidos correctamente. Revisa el formulario y guarda.";
+        }
+    } catch (error) {
+        estado.className = "cv-estado error";
+        estado.textContent = "Ocurrio un error al subir el CV.";
+    }
+});
+</script>
+
+{% endblock %}

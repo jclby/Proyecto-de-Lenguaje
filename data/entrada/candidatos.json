@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ana Gutierrez",
+    "edad": 28,
+    "aniosExperiencia": 4,
+    "nivelEducacion": "licenciatura",
+    "habilidades": [
+      "Python",
+      "SQL",
+      "Machine Learning",
+      "Comunicacion"
+    ],
+    "certificaciones": [
+      "AWS Certified",
+      "Scrum Master"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Luis Paredes",
+    "edad": 35,
+    "aniosExperiencia": 8,
+    "nivelEducacion": "maestria",
+    "habilidades": [
+      "Java",
+      "Scala",
+      "SQL",
+      "Liderazgo",
+      "Comunicacion"
+    ],
+    "certificaciones": [
+      "PMP",
+      "Oracle Certified"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "Maria Quispe",
+    "edad": 24,
+    "aniosExperiencia": 1,
+    "nivelEducacion": "bachiller",
+    "habilidades": [
+      "Python",
+      "HTML",
+      "CSS",
+      "Excel",
+      "Git",
+      "Docker"
+    ],
+    "certificaciones": [],
+    "resumenProfesional": "Desarrolladora junior con experiencia en proyectos web. He trabajado con Git para control de versiones y Docker para despliegue de contenedores. Tambien manejo Excel para reportes."
+  },
+  {
+    "id": 4,
+    "nombre": "Carlos Mendoza",
+    "edad": 30,
+    "aniosExperiencia": 5,
+    "nivelEducacion": "licenciatura",
+    "habilidades": [
+      "Python",
+      "Machine Learning",
+      "SQL",
+      "Comunicacion",
+      "Liderazgo"
+    ],
+    "certificaciones": [
+      "AWS Certified",
+      "Google Cloud",
+      "Scrum Master"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Sofia Torres",
+    "edad": 27,
+    "aniosExperiencia": 3,
+    "nivelEducacion": "licenciatura",
+    "habilidades": [
+      "Java",
+      "SQL",
+      "Comunicacion",
+      "Kotlin",
+      "AWS"
+    ],
+    "certificaciones": [
+      "Oracle Certified"
+    ],
+    "resumenProfesional": "Ingeniera de software con experiencia liderando pequenos equipos. Manejo Kotlin como alternativa moderna a Java y tengo nociones de AWS para despliegue en la nube."
+  },
+  {
+    "id": 6,
+    "nombre": "Diego Ramirez",
+    "edad": 40,
+    "aniosExperiencia": 12,
+    "nivelEducacion": "doctorado",
+    "habilidades": [
+      "Python",
+      "Machine Learning",
+      "SQL",
+      "Liderazgo",
+      "Comunicacion",
+      "Scala"
+    ],
+    "certificaciones": [
+      "AWS Certified",
+      "PMP",
+      "Scrum Master",
+      "Google Cloud"
+    ]
+  },
+  {
+    "id": 7,
+    "nombre": "Gerson Contreras",
+    "edad": 20,
+    "aniosExperiencia": 1,
+    "nivelEducacion": "bachiller",
+    "habilidades": [
+      "Python",
+      "Java",
+      "SQL"
+    ],
+    "certificaciones": [
+      "Cisco"
+    ]
+  }
+]

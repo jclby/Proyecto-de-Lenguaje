@@ -1,0 +1,1258 @@
+[
+  {
+    "candidato" : {
+      "id" : 1,
+      "nombre" : "Ana Gutierrez",
+      "edad" : 28,
+      "aniosExperiencia" : 4,
+      "nivelEducacion" : "licenciatura",
+      "habilidades" : [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "Comunicacion"
+      ],
+      "certificaciones" : [
+        "AWS Certified",
+        "Scrum Master"
+      ]
+    },
+    "puesto" : {
+      "id" : 1,
+      "titulo" : "Data Scientist",
+      "minAniosExperiencia" : 3,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Machine Learning",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "AWS Certified",
+        "Google Cloud"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Python",
+      "Machine Learning",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+    ],
+    "certificacionesExtra" : [
+      "AWS Certified"
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 2,
+      "nombre" : "Luis Paredes",
+      "edad" : 35,
+      "aniosExperiencia" : 8,
+      "nivelEducacion" : "maestria",
+      "habilidades" : [
+        "Java",
+        "Scala",
+        "SQL",
+        "Liderazgo",
+        "Comunicacion"
+      ],
+      "certificaciones" : [
+        "PMP",
+        "Oracle Certified"
+      ]
+    },
+    "puesto" : {
+      "id" : 1,
+      "titulo" : "Data Scientist",
+      "minAniosExperiencia" : 3,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Machine Learning",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "AWS Certified",
+        "Google Cloud"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+      "Python",
+      "Machine Learning"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 3,
+      "nombre" : "Maria Quispe",
+      "edad" : 24,
+      "aniosExperiencia" : 1,
+      "nivelEducacion" : "bachiller",
+      "habilidades" : [
+        "Python",
+        "HTML",
+        "CSS",
+        "Excel",
+        "Git",
+        "Docker"
+      ],
+      "certificaciones" : [
+      ]
+    },
+    "puesto" : {
+      "id" : 1,
+      "titulo" : "Data Scientist",
+      "minAniosExperiencia" : 3,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Machine Learning",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "AWS Certified",
+        "Google Cloud"
+      ]
+    },
+    "cumpleExperiencia" : false,
+    "cumpleEducacion" : false,
+    "habilidadesCoinciden" : [
+      "Python"
+    ],
+    "habilidadesFaltantes" : [
+      "Machine Learning",
+      "SQL"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 4,
+      "nombre" : "Carlos Mendoza",
+      "edad" : 30,
+      "aniosExperiencia" : 5,
+      "nivelEducacion" : "licenciatura",
+      "habilidades" : [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "Comunicacion",
+        "Liderazgo"
+      ],
+      "certificaciones" : [
+        "AWS Certified",
+        "Google Cloud",
+        "Scrum Master"
+      ]
+    },
+    "puesto" : {
+      "id" : 1,
+      "titulo" : "Data Scientist",
+      "minAniosExperiencia" : 3,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Machine Learning",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "AWS Certified",
+        "Google Cloud"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Python",
+      "Machine Learning",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+    ],
+    "certificacionesExtra" : [
+      "AWS Certified",
+      "Google Cloud"
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 5,
+      "nombre" : "Sofia Torres",
+      "edad" : 27,
+      "aniosExperiencia" : 3,
+      "nivelEducacion" : "licenciatura",
+      "habilidades" : [
+        "Java",
+        "SQL",
+        "Comunicacion",
+        "Kotlin",
+        "AWS"
+      ],
+      "certificaciones" : [
+        "Oracle Certified"
+      ]
+    },
+    "puesto" : {
+      "id" : 1,
+      "titulo" : "Data Scientist",
+      "minAniosExperiencia" : 3,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Machine Learning",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "AWS Certified",
+        "Google Cloud"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+      "Python",
+      "Machine Learning"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 6,
+      "nombre" : "Diego Ramirez",
+      "edad" : 40,
+      "aniosExperiencia" : 12,
+      "nivelEducacion" : "doctorado",
+      "habilidades" : [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "Liderazgo",
+        "Comunicacion",
+        "Scala"
+      ],
+      "certificaciones" : [
+        "AWS Certified",
+        "PMP",
+        "Scrum Master",
+        "Google Cloud"
+      ]
+    },
+    "puesto" : {
+      "id" : 1,
+      "titulo" : "Data Scientist",
+      "minAniosExperiencia" : 3,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Machine Learning",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "AWS Certified",
+        "Google Cloud"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Python",
+      "Machine Learning",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+    ],
+    "certificacionesExtra" : [
+      "AWS Certified",
+      "Google Cloud"
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 7,
+      "nombre" : "Gerson Contreras",
+      "edad" : 20,
+      "aniosExperiencia" : 1,
+      "nivelEducacion" : "bachiller",
+      "habilidades" : [
+        "Python",
+        "Java",
+        "SQL"
+      ],
+      "certificaciones" : [
+        "Cisco"
+      ]
+    },
+    "puesto" : {
+      "id" : 1,
+      "titulo" : "Data Scientist",
+      "minAniosExperiencia" : 3,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Machine Learning",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "AWS Certified",
+        "Google Cloud"
+      ]
+    },
+    "cumpleExperiencia" : false,
+    "cumpleEducacion" : false,
+    "habilidadesCoinciden" : [
+      "Python",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+      "Machine Learning"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 1,
+      "nombre" : "Ana Gutierrez",
+      "edad" : 28,
+      "aniosExperiencia" : 4,
+      "nivelEducacion" : "licenciatura",
+      "habilidades" : [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "Comunicacion"
+      ],
+      "certificaciones" : [
+        "AWS Certified",
+        "Scrum Master"
+      ]
+    },
+    "puesto" : {
+      "id" : 2,
+      "titulo" : "Tech Lead",
+      "minAniosExperiencia" : 6,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Liderazgo",
+        "Comunicacion",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "PMP",
+        "Scrum Master"
+      ]
+    },
+    "cumpleExperiencia" : false,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Comunicacion",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+      "Liderazgo"
+    ],
+    "certificacionesExtra" : [
+      "Scrum Master"
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 2,
+      "nombre" : "Luis Paredes",
+      "edad" : 35,
+      "aniosExperiencia" : 8,
+      "nivelEducacion" : "maestria",
+      "habilidades" : [
+        "Java",
+        "Scala",
+        "SQL",
+        "Liderazgo",
+        "Comunicacion"
+      ],
+      "certificaciones" : [
+        "PMP",
+        "Oracle Certified"
+      ]
+    },
+    "puesto" : {
+      "id" : 2,
+      "titulo" : "Tech Lead",
+      "minAniosExperiencia" : 6,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Liderazgo",
+        "Comunicacion",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "PMP",
+        "Scrum Master"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Liderazgo",
+      "Comunicacion",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+    ],
+    "certificacionesExtra" : [
+      "PMP"
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 3,
+      "nombre" : "Maria Quispe",
+      "edad" : 24,
+      "aniosExperiencia" : 1,
+      "nivelEducacion" : "bachiller",
+      "habilidades" : [
+        "Python",
+        "HTML",
+        "CSS",
+        "Excel",
+        "Git",
+        "Docker"
+      ],
+      "certificaciones" : [
+      ]
+    },
+    "puesto" : {
+      "id" : 2,
+      "titulo" : "Tech Lead",
+      "minAniosExperiencia" : 6,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Liderazgo",
+        "Comunicacion",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "PMP",
+        "Scrum Master"
+      ]
+    },
+    "cumpleExperiencia" : false,
+    "cumpleEducacion" : false,
+    "habilidadesCoinciden" : [
+    ],
+    "habilidadesFaltantes" : [
+      "Liderazgo",
+      "Comunicacion",
+      "SQL"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 4,
+      "nombre" : "Carlos Mendoza",
+      "edad" : 30,
+      "aniosExperiencia" : 5,
+      "nivelEducacion" : "licenciatura",
+      "habilidades" : [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "Comunicacion",
+        "Liderazgo"
+      ],
+      "certificaciones" : [
+        "AWS Certified",
+        "Google Cloud",
+        "Scrum Master"
+      ]
+    },
+    "puesto" : {
+      "id" : 2,
+      "titulo" : "Tech Lead",
+      "minAniosExperiencia" : 6,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Liderazgo",
+        "Comunicacion",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "PMP",
+        "Scrum Master"
+      ]
+    },
+    "cumpleExperiencia" : false,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Liderazgo",
+      "Comunicacion",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+    ],
+    "certificacionesExtra" : [
+      "Scrum Master"
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 5,
+      "nombre" : "Sofia Torres",
+      "edad" : 27,
+      "aniosExperiencia" : 3,
+      "nivelEducacion" : "licenciatura",
+      "habilidades" : [
+        "Java",
+        "SQL",
+        "Comunicacion",
+        "Kotlin",
+        "AWS"
+      ],
+      "certificaciones" : [
+        "Oracle Certified"
+      ]
+    },
+    "puesto" : {
+      "id" : 2,
+      "titulo" : "Tech Lead",
+      "minAniosExperiencia" : 6,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Liderazgo",
+        "Comunicacion",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "PMP",
+        "Scrum Master"
+      ]
+    },
+    "cumpleExperiencia" : false,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Comunicacion",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+      "Liderazgo"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 6,
+      "nombre" : "Diego Ramirez",
+      "edad" : 40,
+      "aniosExperiencia" : 12,
+      "nivelEducacion" : "doctorado",
+      "habilidades" : [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "Liderazgo",
+        "Comunicacion",
+        "Scala"
+      ],
+      "certificaciones" : [
+        "AWS Certified",
+        "PMP",
+        "Scrum Master",
+        "Google Cloud"
+      ]
+    },
+    "puesto" : {
+      "id" : 2,
+      "titulo" : "Tech Lead",
+      "minAniosExperiencia" : 6,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Liderazgo",
+        "Comunicacion",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "PMP",
+        "Scrum Master"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Liderazgo",
+      "Comunicacion",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+    ],
+    "certificacionesExtra" : [
+      "PMP",
+      "Scrum Master"
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 7,
+      "nombre" : "Gerson Contreras",
+      "edad" : 20,
+      "aniosExperiencia" : 1,
+      "nivelEducacion" : "bachiller",
+      "habilidades" : [
+        "Python",
+        "Java",
+        "SQL"
+      ],
+      "certificaciones" : [
+        "Cisco"
+      ]
+    },
+    "puesto" : {
+      "id" : 2,
+      "titulo" : "Tech Lead",
+      "minAniosExperiencia" : 6,
+      "nivelEducacionRequerido" : "licenciatura",
+      "habilidadesRequeridas" : [
+        "Liderazgo",
+        "Comunicacion",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "PMP",
+        "Scrum Master"
+      ]
+    },
+    "cumpleExperiencia" : false,
+    "cumpleEducacion" : false,
+    "habilidadesCoinciden" : [
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+      "Liderazgo",
+      "Comunicacion"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 1,
+      "nombre" : "Ana Gutierrez",
+      "edad" : 28,
+      "aniosExperiencia" : 4,
+      "nivelEducacion" : "licenciatura",
+      "habilidades" : [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "Comunicacion"
+      ],
+      "certificaciones" : [
+        "AWS Certified",
+        "Scrum Master"
+      ]
+    },
+    "puesto" : {
+      "id" : 3,
+      "titulo" : "Junior Developer",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Python",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 2,
+      "nombre" : "Luis Paredes",
+      "edad" : 35,
+      "aniosExperiencia" : 8,
+      "nivelEducacion" : "maestria",
+      "habilidades" : [
+        "Java",
+        "Scala",
+        "SQL",
+        "Liderazgo",
+        "Comunicacion"
+      ],
+      "certificaciones" : [
+        "PMP",
+        "Oracle Certified"
+      ]
+    },
+    "puesto" : {
+      "id" : 3,
+      "titulo" : "Junior Developer",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+      "Python"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 3,
+      "nombre" : "Maria Quispe",
+      "edad" : 24,
+      "aniosExperiencia" : 1,
+      "nivelEducacion" : "bachiller",
+      "habilidades" : [
+        "Python",
+        "HTML",
+        "CSS",
+        "Excel",
+        "Git",
+        "Docker"
+      ],
+      "certificaciones" : [
+      ]
+    },
+    "puesto" : {
+      "id" : 3,
+      "titulo" : "Junior Developer",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Python"
+    ],
+    "habilidadesFaltantes" : [
+      "SQL"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 4,
+      "nombre" : "Carlos Mendoza",
+      "edad" : 30,
+      "aniosExperiencia" : 5,
+      "nivelEducacion" : "licenciatura",
+      "habilidades" : [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "Comunicacion",
+        "Liderazgo"
+      ],
+      "certificaciones" : [
+        "AWS Certified",
+        "Google Cloud",
+        "Scrum Master"
+      ]
+    },
+    "puesto" : {
+      "id" : 3,
+      "titulo" : "Junior Developer",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Python",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 5,
+      "nombre" : "Sofia Torres",
+      "edad" : 27,
+      "aniosExperiencia" : 3,
+      "nivelEducacion" : "licenciatura",
+      "habilidades" : [
+        "Java",
+        "SQL",
+        "Comunicacion",
+        "Kotlin",
+        "AWS"
+      ],
+      "certificaciones" : [
+        "Oracle Certified"
+      ]
+    },
+    "puesto" : {
+      "id" : 3,
+      "titulo" : "Junior Developer",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+      "Python"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 6,
+      "nombre" : "Diego Ramirez",
+      "edad" : 40,
+      "aniosExperiencia" : 12,
+      "nivelEducacion" : "doctorado",
+      "habilidades" : [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "Liderazgo",
+        "Comunicacion",
+        "Scala"
+      ],
+      "certificaciones" : [
+        "AWS Certified",
+        "PMP",
+        "Scrum Master",
+        "Google Cloud"
+      ]
+    },
+    "puesto" : {
+      "id" : 3,
+      "titulo" : "Junior Developer",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Python",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 7,
+      "nombre" : "Gerson Contreras",
+      "edad" : 20,
+      "aniosExperiencia" : 1,
+      "nivelEducacion" : "bachiller",
+      "habilidades" : [
+        "Python",
+        "Java",
+        "SQL"
+      ],
+      "certificaciones" : [
+        "Cisco"
+      ]
+    },
+    "puesto" : {
+      "id" : 3,
+      "titulo" : "Junior Developer",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Python",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 1,
+      "nombre" : "Ana Gutierrez",
+      "edad" : 28,
+      "aniosExperiencia" : 4,
+      "nivelEducacion" : "licenciatura",
+      "habilidades" : [
+        "Python",
+        "SQL",
+        "Machine Learning",
+        "Comunicacion"
+      ],
+      "certificaciones" : [
+        "AWS Certified",
+        "Scrum Master"
+      ]
+    },
+    "puesto" : {
+      "id" : 4,
+      "titulo" : "Programador Junior",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Java",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "Cisco"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Python",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+      "Java"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 2,
+      "nombre" : "Luis Paredes",
+      "edad" : 35,
+      "aniosExperiencia" : 8,
+      "nivelEducacion" : "maestria",
+      "habilidades" : [
+        "Java",
+        "Scala",
+        "SQL",
+        "Liderazgo",
+        "Comunicacion"
+      ],
+      "certificaciones" : [
+        "PMP",
+        "Oracle Certified"
+      ]
+    },
+    "puesto" : {
+      "id" : 4,
+      "titulo" : "Programador Junior",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Java",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "Cisco"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Java",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+      "Python"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 3,
+      "nombre" : "Maria Quispe",
+      "edad" : 24,
+      "aniosExperiencia" : 1,
+      "nivelEducacion" : "bachiller",
+      "habilidades" : [
+        "Python",
+        "HTML",
+        "CSS",
+        "Excel",
+        "Git",
+        "Docker"
+      ],
+      "certificaciones" : [
+      ]
+    },
+    "puesto" : {
+      "id" : 4,
+      "titulo" : "Programador Junior",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Java",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "Cisco"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Python"
+    ],
+    "habilidadesFaltantes" : [
+      "Java",
+      "SQL"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 4,
+      "nombre" : "Carlos Mendoza",
+      "edad" : 30,
+      "aniosExperiencia" : 5,
+      "nivelEducacion" : "licenciatura",
+      "habilidades" : [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "Comunicacion",
+        "Liderazgo"
+      ],
+      "certificaciones" : [
+        "AWS Certified",
+        "Google Cloud",
+        "Scrum Master"
+      ]
+    },
+    "puesto" : {
+      "id" : 4,
+      "titulo" : "Programador Junior",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Java",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "Cisco"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Python",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+      "Java"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 5,
+      "nombre" : "Sofia Torres",
+      "edad" : 27,
+      "aniosExperiencia" : 3,
+      "nivelEducacion" : "licenciatura",
+      "habilidades" : [
+        "Java",
+        "SQL",
+        "Comunicacion",
+        "Kotlin",
+        "AWS"
+      ],
+      "certificaciones" : [
+        "Oracle Certified"
+      ]
+    },
+    "puesto" : {
+      "id" : 4,
+      "titulo" : "Programador Junior",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Java",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "Cisco"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Java",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+      "Python"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 6,
+      "nombre" : "Diego Ramirez",
+      "edad" : 40,
+      "aniosExperiencia" : 12,
+      "nivelEducacion" : "doctorado",
+      "habilidades" : [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "Liderazgo",
+        "Comunicacion",
+        "Scala"
+      ],
+      "certificaciones" : [
+        "AWS Certified",
+        "PMP",
+        "Scrum Master",
+        "Google Cloud"
+      ]
+    },
+    "puesto" : {
+      "id" : 4,
+      "titulo" : "Programador Junior",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Java",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "Cisco"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Python",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+      "Java"
+    ],
+    "certificacionesExtra" : [
+    ]
+  },
+  {
+    "candidato" : {
+      "id" : 7,
+      "nombre" : "Gerson Contreras",
+      "edad" : 20,
+      "aniosExperiencia" : 1,
+      "nivelEducacion" : "bachiller",
+      "habilidades" : [
+        "Python",
+        "Java",
+        "SQL"
+      ],
+      "certificaciones" : [
+        "Cisco"
+      ]
+    },
+    "puesto" : {
+      "id" : 4,
+      "titulo" : "Programador Junior",
+      "minAniosExperiencia" : 0,
+      "nivelEducacionRequerido" : "bachiller",
+      "habilidadesRequeridas" : [
+        "Python",
+        "Java",
+        "SQL"
+      ],
+      "certificacionesDeseadas" : [
+        "Cisco"
+      ]
+    },
+    "cumpleExperiencia" : true,
+    "cumpleEducacion" : true,
+    "habilidadesCoinciden" : [
+      "Python",
+      "Java",
+      "SQL"
+    ],
+    "habilidadesFaltantes" : [
+    ],
+    "certificacionesExtra" : [
+      "Cisco"
+    ]
+  }
+]

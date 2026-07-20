@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block titulo %}Tabla completa - Seleccion de Personal{% endblock %}
+
+{% block contenido %}
+
+{% if sin_datos %}
+    <div class="aviso">
+        <p>No se encontraron datos en <code>data/salida/puntajes.json</code>.</p>
+        <p>Ejecuta <code>python integrador.py</code> desde la raiz del proyecto primero.</p>
+    </div>
+{% else %}
+
+    <form method="get" class="filtros">
+        <select name="puesto" onchange="this.form.submit()">
+            <option value="">Todos los puestos</option>
+            {% for atomo, legible in puestos_unicos %}
+            <option value="{{ atomo }}" {% if atomo == filtro_puesto %}selected{% endif %}>{{ legible }}</option>
+            {% endfor %}
+        </select>
+
+        <select name="clasificacion" onchange="this.form.submit()">
+            <option value="">Todas las clasificaciones</option>
+            {% for clase in clases_unicas %}
+            <option value="{{ clase }}" {% if clase == filtro_clase %}selected{% endif %}>{{ clase }}</option>
+            {% endfor %}
+        </select>
+
+        {% if filtro_puesto or filtro_clase %}
+        <a href="/todos" class="boton-limpiar">Limpiar filtros</a>
+        {% endif %}
+    </form>
+
+    <div class="card">
+        <table class="tabla">
+            <thead>
+                <tr>
+                    <th>Candidato</th>
+                    <th>Puesto</th>
+                    <th>Compatibilidad</th>
+                    <th>Clasificacion</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for r in registros %}
+                <tr>
+                    <td>{{ r.candidato_legible }}</td>
+                    <td>{{ r.puesto_legible }}</td>
+                    <td>
+                        <div class="barra-contenedor barra-contenedor-tabla">
+                            <div class="barra barra-{{ r.color }}" style="width: {{ r.puntaje }}%;"></div>
+                        </div>
+                        <span class="puntaje-tabla">{{ r.puntaje }}%</span>
+                    </td>
+                    <td><span class="badge badge-{{ r.color }}">{{ r.clasificacion }}</span></td>
+                </tr>
+                {% if r.explicacion %}
+                <tr class="fila-explicacion">
+                    <td colspan="4">
+                        <details>
+                            <summary>Ver explicacion logica</summary>
+                            <p class="texto-explicacion">{{ r.explicacion }}</p>
+                        </details>
+                    </td>
+                </tr>
+                {% endif %}
+                {% endfor %}
+            </tbody>
+        </table>
+        {% if registros|length == 0 %}
+        <p class="sin-resultados">No hay registros que coincidan con los filtros.</p>
+        {% endif %}
+    </div>
+
+{% endif %}
+
+{% endblock %}

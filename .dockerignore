@@ -1,0 +1,12 @@
+.git
+.gitignore
+**/__pycache__
+**/*.pyc
+scala/target
+scala/project/target
+scala/project/project
+scala/.bsp
+scala/.metals
+docs
+integracion/*.md
+README.md

@@ -1,0 +1,615 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: #F7F6F2;
+    color: #2C2C2A;
+    line-height: 1.6;
+}
+
+/* ── Header ───────────────────────────────────────────────── */
+.header {
+    background: #FFFFFF;
+    border-bottom: 1px solid #E5E3DA;
+}
+
+.header-contenido {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-titulo {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #5F5E5A;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: #2C2C2A;
+}
+
+/* ── Contenedor general ───────────────────────────────────── */
+.contenedor {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: #888780;
+}
+
+/* ── Tarjetas de estadisticas ─────────────────────────────── */
+.tarjetas-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.stat {
+    background: #EFEDE5;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #5F5E5A;
+    margin-bottom: 4px;
+}
+
+.stat-valor {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* ── Card general ─────────────────────────────────────────── */
+.card {
+    background: #FFFFFF;
+    border-radius: 12px;
+    border: 1px solid #E5E3DA;
+    padding: 16px 20px;
+    margin-bottom: 24px;
+}
+
+.card-titulo {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+/* ── Fila de ranking (dashboard) ──────────────────────────── */
+.fila-ranking {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-top: 1px solid #EFEDE5;
+}
+
+.fila-ranking:first-child {
+    border-top: none;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #E6F1FB;
+    color: #0C447C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.fila-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.fila-nombre {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.fila-puesto {
+    font-size: 12px;
+    color: #888780;
+}
+
+.barra-contenedor {
+    width: 100px;
+    height: 6px;
+    background: #EFEDE5;
+    border-radius: 999px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.barra-contenedor-tabla {
+    display: inline-block;
+    width: 80px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.barra {
+    height: 100%;
+    border-radius: 999px;
+}
+
+.barra-excelente { background: #1D9E75; }
+.barra-bueno     { background: #378ADD; }
+.barra-regular   { background: #EF9F27; }
+.barra-bajo      { background: #E24B4A; }
+
+.puntaje {
+    font-size: 13px;
+    font-weight: 600;
+    width: 40px;
+    text-align: right;
+}
+
+.puntaje-excelente { color: #085041; }
+.puntaje-bueno     { color: #0C447C; }
+.puntaje-regular   { color: #854F0B; }
+.puntaje-bajo      { color: #791F1F; }
+
+.puntaje-tabla {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* ── Grid de puestos (dashboard) ──────────────────────────── */
+.grid-puestos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.tarjeta-puesto {
+    background: #FFFFFF;
+    border: 1px solid #E5E3DA;
+    border-radius: 12px;
+    padding: 16px;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: border-color 0.15s;
+}
+
+.tarjeta-puesto:hover {
+    border-color: #B4B2A9;
+}
+
+.tarjeta-puesto-titulo {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.tarjeta-puesto-info {
+    font-size: 12px;
+    color: #888780;
+}
+
+/* ── Filtros (tabla completa) ─────────────────────────────── */
+.filtros {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.filtros select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #E5E3DA;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #2C2C2A;
+}
+
+.boton-limpiar {
+    font-size: 13px;
+    color: #185FA5;
+    text-decoration: none;
+}
+
+.boton-limpiar:hover {
+    text-decoration: underline;
+}
+
+/* ── Tabla ─────────────────────────────────────────────────── */
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th {
+    text-align: left;
+    font-size: 12px;
+    color: #888780;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-bottom: 1px solid #E5E3DA;
+}
+
+.tabla td {
+    padding: 10px 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #EFEDE5;
+}
+
+.sin-resultados {
+    text-align: center;
+    color: #888780;
+    padding: 24px;
+    font-size: 14px;
+}
+
+/* ── Badges ────────────────────────────────────────────────── */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-excelente { background: #E1F5EE; color: #085041; }
+.badge-bueno     { background: #E6F1FB; color: #0C447C; }
+.badge-regular   { background: #FAEEDA; color: #854F0B; }
+.badge-bajo      { background: #FCEBEB; color: #791F1F; }
+
+/* ── Avisos ────────────────────────────────────────────────── */
+.aviso {
+    background: #FFFFFF;
+    border: 1px solid #E5E3DA;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    color: #5F5E5A;
+}
+
+.aviso code {
+    background: #EFEDE5;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/* ── Acciones superiores ──────────────────────────────────── */
+.acciones-top {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+/* ── Botones ───────────────────────────────────────────────── */
+.boton-principal {
+    display: inline-block;
+    background: #2C2C2A;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-principal:hover {
+    background: #444441;
+}
+
+.boton-secundario {
+    display: inline-block;
+    background: #FFFFFF;
+    color: #2C2C2A;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid #E5E3DA;
+}
+
+.boton-secundario:hover {
+    border-color: #B4B2A9;
+}
+
+/* ── Formularios ───────────────────────────────────────────── */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.formulario label {
+    font-size: 13px;
+    color: #5F5E5A;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #E5E3DA;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #2C2C2A;
+    font-family: inherit;
+    resize: vertical;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #888780;
+}
+
+.formulario-fila {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.formulario .boton-principal {
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.formulario-acciones {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: 16px;
+}
+
+/* ── Selector de chips (combobox + otro + agregar) ────────────────────── */
+.chip-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chip-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.chip-lista:empty {
+    display: none;
+}
+
+.chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #EFEDE5;
+    border-radius: 999px;
+    padding: 6px 8px 6px 12px;
+    font-size: 13px;
+    color: #2C2C2A;
+}
+
+.chip-quitar {
+    background: none;
+    border: none;
+    color: #5F5E5A;
+    font-size: 15px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 2px 4px;
+    border-radius: 50%;
+}
+
+.chip-quitar:hover {
+    background: #E5E3DA;
+    color: #2C2C2A;
+}
+
+.chip-agregar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.chip-agregar select,
+.chip-agregar input {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #E5E3DA;
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #2C2C2A;
+    font-family: inherit;
+    flex: 1;
+    min-width: 160px;
+}
+
+.chip-agregar .chip-add-btn {
+    flex-shrink: 0;
+}
+
+/* ── Subida de CV en PDF ──────────────────────────────────────────────── */
+.cv-dropzone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    border: 1.5px dashed #C9C6BA;
+    border-radius: 12px;
+    background: #FAF9F5;
+    padding: 32px 20px;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.cv-dropzone:hover {
+    border-color: #888780;
+    background: #F5F3EC;
+}
+
+.cv-dropzone-activo {
+    border-color: #378ADD;
+    background: #E6F1FB;
+}
+
+.cv-dropzone-con-archivo {
+    border-style: solid;
+    border-color: #1D9E75;
+    background: #E9F7F1;
+}
+
+.cv-icono {
+    color: #888780;
+}
+
+.cv-dropzone-con-archivo .cv-icono {
+    color: #1D9E75;
+}
+
+.cv-dropzone-texto {
+    font-size: 14px;
+    color: #5F5E5A;
+    font-weight: 500;
+}
+
+.cv-boton-extraer {
+    margin-top: 16px;
+}
+
+.cv-estado {
+    margin-top: 14px;
+    font-size: 13px;
+    padding: 10px 14px;
+    border-radius: 8px;
+}
+
+.cv-estado:empty {
+    display: none;
+    padding: 0;
+}
+
+.cv-estado.exito {
+    color: #085041;
+    background: #E9F7F1;
+}
+
+.cv-estado.error {
+    color: #791F1F;
+    background: #FBEAEA;
+}
+
+.cv-estado ul {
+    margin: 6px 0 0 18px;
+}
+
+/* ── Pantalla de recalculo ────────────────────────────────────*/
+.texto-secundario {
+    font-size: 14px;
+    color: #5F5E5A;
+    margin: 8px 0 16px;
+}
+
+.aviso-exito {
+    background: #E1F5EE;
+    color: #085041;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.detalle-log summary {
+    cursor: pointer;
+    font-size: 13px;
+    color: #185FA5;
+    margin-bottom: 8px;
+}
+
+.log {
+    background: #2C2C2A;
+    color: #D3D1C7;
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 700px) {
+    .tarjetas-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-puestos {
+        grid-template-columns: 1fr;
+    }
+    .filtros {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .formulario-fila {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── Fila de explicacion (tabla completa) ─────────────────────*/
+.fila-explicacion td {
+    padding: 0 12px 10px;
+    border-bottom: 1px solid #E5E3DA;
+}
+
+.fila-explicacion summary {
+    cursor: pointer;
+    font-size: 12px;
+    color: #185FA5;
+}
+
+.texto-explicacion {
+    font-size: 13px;
+    color: #5F5E5A;
+    margin-top: 8px;
+    padding: 10px 12px;
+    background: #F7F6F2;
+    border-radius: 8px;
+    line-height: 1.5;
+}

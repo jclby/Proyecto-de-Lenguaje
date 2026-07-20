@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block titulo %}Dashboard - Seleccion de Personal{% endblock %}
+
+{% block contenido %}
+
+{% if sin_datos %}
+    <div class="aviso">
+        <p>No se encontraron datos en <code>data/salida/puntajes.json</code>.</p>
+        <p>Ejecuta <code>python integrador.py</code> desde la raiz del proyecto primero,</p>
+        <p>o usa el boton de abajo.</p>
+        <a href="/recalcular" class="boton-principal">Ejecutar integracion ahora</a>
+    </div>
+{% else %}
+
+    <div class="acciones-top">
+        <a href="/recalcular" class="boton-secundario">Recalcular todo</a>
+    </div>
+
+    <div class="tarjetas-stats">
+        <div class="stat">
+            <p class="stat-label">Candidatos</p>
+            <p class="stat-valor">{{ total_candidatos }}</p>
+        </div>
+        <div class="stat">
+            <p class="stat-label">Puestos</p>
+            <p class="stat-valor">{{ total_puestos }}</p>
+        </div>
+        <div class="stat">
+            <p class="stat-label">Promedio</p>
+            <p class="stat-valor">{{ promedio }}%</p>
+        </div>
+        <div class="stat">
+            <p class="stat-label">Excelentes</p>
+            <p class="stat-valor">{{ excelentes }}</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <p class="card-titulo">Mejores coincidencias</p>
+        {% for p in top5 %}
+        <div class="fila-ranking">
+            <div class="avatar">{{ p.iniciales }}</div>
+            <div class="fila-info">
+                <p class="fila-nombre">{{ p.candidato_legible }}</p>
+                <p class="fila-puesto">{{ p.puesto_legible }}</p>
+            </div>
+            <div class="barra-contenedor">
+                <div class="barra barra-{{ p.color }}" style="width: {{ p.puntaje }}%;"></div>
+            </div>
+            <span class="puntaje puntaje-{{ p.color }}">{{ p.puntaje }}%</span>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="grid-puestos">
+        {% for titulo, info in resumen_puestos.items() %}
+        <a href="/todos?puesto={{ info.atomo }}" class="tarjeta-puesto">
+            <p class="tarjeta-puesto-titulo">{{ titulo }}</p>
+            <p class="tarjeta-puesto-info">{{ info.total }} candidatos evaluados</p>
+            <p class="tarjeta-puesto-info">Mejor puntaje: {{ info.mejor }}%</p>
+        </a>
+        {% endfor %}
+    </div>
+
+{% endif %}
+
+{% endblock %}
